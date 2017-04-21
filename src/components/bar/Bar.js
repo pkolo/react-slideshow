@@ -6,7 +6,11 @@ class Bar extends Component {
 
   render(props) {
     return (
-      <BarButton />
+      <div>
+        {this.props.slides.map(slide =>
+          <BarButton key={slide} name={slide}/>
+        )}
+      </div>
     );
   }
 }
