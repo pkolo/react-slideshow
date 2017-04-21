@@ -41,10 +41,14 @@ class App extends Component {
     return (
       <div>
         {this.state.slides.length > 0 &&
-          <Bar slides={this.getSlideIDs()} onSelect={this.changeActiveSlide}/>
+          <div className="App-sidebar">
+            <Bar slides={this.getSlideIDs()} onSelect={this.changeActiveSlide}/>
+          </div>
         }
         {this.state.slides.length > 0 &&
-          <Slide slide={this.getActiveSlideContent()}/>
+          <div className="App-slide">
+            <Slide slide={this.getActiveSlideContent()}/>
+          </div>
         }
       </div>
     );
