@@ -10,7 +10,7 @@ class App extends Component {
     super(props);
     this.state = {
       slides: [],
-      activeSlideID: 3
+      activeSlideID: 1
     };
   }
 
@@ -32,11 +32,10 @@ class App extends Component {
   }
 
   render() {
-    this.getSlideIDs()
     return (
       <div>
         {this.state.slides.length > 0 &&
-          <Bar />
+          <Bar slides={this.getSlideIDs()}/>
         }
         {this.state.slides.length > 0 &&
           <Slide slide={this.getActiveSlideContent()}/>
