@@ -12,6 +12,8 @@ class App extends Component {
       slides: [],
       activeSlideID: 1
     };
+
+    this.changeActiveSlide = this.changeActiveSlide.bind(this)
   }
 
   componentDidMount() {
@@ -39,7 +41,7 @@ class App extends Component {
     return (
       <div>
         {this.state.slides.length > 0 &&
-          <Bar slides={this.getSlideIDs()}/>
+          <Bar slides={this.getSlideIDs()} onSelect={this.changeActiveSlide}/>
         }
         {this.state.slides.length > 0 &&
           <Slide slide={this.getActiveSlideContent()}/>
