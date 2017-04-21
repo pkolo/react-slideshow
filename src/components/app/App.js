@@ -14,6 +14,7 @@ class App extends Component {
     };
 
     this.changeActiveSlide = this.changeActiveSlide.bind(this)
+    this.isActive = this.isActive.bind(this)
   }
 
   componentDidMount() {
@@ -37,14 +38,22 @@ class App extends Component {
     this.setState({activeSlideID: id})
   }
 
+  isActive(id) {
+    return (id === this.state.activeSlideID)
+  }
+
   render() {
     return (
-      <div>
+      <div className="App-wrapper">
         {this.state.slides.length > 0 &&
-          <Bar slides={this.getSlideIDs()} onSelect={this.changeActiveSlide}/>
+          <div className="App-sidebar">
+            <Bar slides={this.getSlideIDs()} onSelect={this.changeActiveSlide} isActiveSlide={this.isActive}/>
+          </div>
         }
         {this.state.slides.length > 0 &&
-          <Slide slide={this.getActiveSlideContent()}/>
+          <div className="App-slide">
+            <Slide slide={this.getActiveSlideContent()}/>
+          </div>
         }
       </div>
     );
