@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
+import BarButton from '../barbutton/BarButton'
+
 class Bar extends Component {
 
 
   render(props) {
     return (
-      <h1>Hell </h1>
+      <BarButton />
     );
   }
 }
