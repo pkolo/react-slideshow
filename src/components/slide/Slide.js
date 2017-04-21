@@ -4,7 +4,7 @@ import './Slide.css';
 class Slide extends Component {
   render() {
     return (
-      <h1>Hell world</h1>
+      <h1>Hell</h1>
     );
   }
 }
