@@ -6,7 +6,7 @@ class Slide extends Component {
 
   render(props) {
     return (
-      <h1>Hell {this.props.slide.title}</h1>
+      <div className="Slide-title">Hell {this.props.slide.title}</div>
     );
   }
 }
