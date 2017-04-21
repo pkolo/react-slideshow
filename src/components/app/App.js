@@ -8,7 +8,8 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      slides: []
+      slides: [],
+      activeSlideID: 1
     };
   }
 
@@ -19,11 +20,18 @@ class App extends Component {
       })
   }
 
+  getActiveSlide() {
+    let activeSlide = this.state.slides.filter(slide => (slide.id === this.state.activeSlideID))
+    return activeSlide[0]
+  }
+
+
   render() {
-    console.log(this.state)
     return (
       <div>
-        <Slide />
+        {this.state.slides.length > 0 &&
+          <Slide slide={this.getActiveSlide()}/>
+        }
       </div>
     );
   }
