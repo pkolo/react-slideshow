@@ -15,11 +15,12 @@ class App extends Component {
   componentDidMount() {
     axios.get('../../../data.json')
       .then(response => {
-        console.log(response)
+        this.setState({ slides: response.data.slides})
       })
   }
 
   render() {
+    console.log(this.state)
     return (
       <div>
         <Slide />
