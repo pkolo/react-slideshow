@@ -8,7 +8,7 @@ class Bar extends Component {
     return (
       <div>
         {this.props.slides.map(slide =>
-          <BarButton key={slide} name={slide}/>
+          <BarButton key={slide} name={slide} onSelect={this.props.onSelect}/>
         )}
       </div>
     );
