@@ -39,7 +39,7 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className="App-wrapper">
         {this.state.slides.length > 0 &&
           <div className="App-sidebar">
             <Bar slides={this.getSlideIDs()} onSelect={this.changeActiveSlide}/>

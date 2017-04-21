@@ -1,3 +1,7 @@
+.App-wrapper {
+  height: 100vh;
+}
+
 .App-sidebar {
   float: left;
   width: 50px;
@@ -5,5 +9,7 @@
 
 .App-slide {
   float: left;
-  max-width: 800px;
+  min-height: 100%;
+  width: 900px;
+  background-color: #555;
 }
