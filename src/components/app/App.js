@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Slide from '../slide/Slide'
+import Bar from '../bar/Bar'
 import axios from 'axios'
 
 class App extends Component {
@@ -9,7 +10,7 @@ class App extends Component {
     super(props);
     this.state = {
       slides: [],
-      activeSlideID: 1
+      activeSlideID: 3
     };
   }
 
@@ -20,17 +21,25 @@ class App extends Component {
       })
   }
 
-  getActiveSlide() {
+  getActiveSlideContent() {
     let activeSlide = this.state.slides.filter(slide => (slide.id === this.state.activeSlideID))
-    return activeSlide[0]
+    return activeSlide[0].content
   }
 
+  getSlideIDs() {
+    let slideIDs = this.state.slides.map(slide => slide.id)
+    return slideIDs
+  }
 
   render() {
+    this.getSlideIDs()
     return (
       <div>
         {this.state.slides.length > 0 &&
-          <Slide slide={this.getActiveSlide()}/>
+          <Bar />
+        }
+        {this.state.slides.length > 0 &&
+          <Slide slide={this.getActiveSlideContent()}/>
         }
       </div>
     );
