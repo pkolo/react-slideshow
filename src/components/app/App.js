@@ -1,18 +1,51 @@
 import React, { Component } from 'react';
-import logo from '../../logo.svg';
 import './App.css';
+import Slide from '../slide/Slide'
+import Bar from '../bar/Bar'
+import axios from 'axios'
 
 class App extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      slides: [],
+      activeSlideID: 1
+    };
+
+    this.changeActiveSlide = this.changeActiveSlide.bind(this)
+  }
+
+  componentDidMount() {
+    axios.get('../../../data.json')
+      .then(response => {
+        this.setState({ slides: response.data.slides})
+      })
+  }
+
+  getActiveSlideContent() {
+    let activeSlide = this.state.slides.filter(slide => (slide.id === this.state.activeSlideID))
+    return activeSlide[0].content
+  }
+
+  getSlideIDs() {
+    let slideIDs = this.state.slides.map(slide => slide.id)
+    return slideIDs
+  }
+
+  changeActiveSlide(id) {
+    this.setState({activeSlideID: id})
+  }
+
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to Reactx</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div>
+        {this.state.slides.length > 0 &&
+          <Bar slides={this.getSlideIDs()} onSelect={this.changeActiveSlide}/>
+        }
+        {this.state.slides.length > 0 &&
+          <Slide slide={this.getActiveSlideContent()}/>
+        }
       </div>
     );
   }
