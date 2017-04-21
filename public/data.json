@@ -1,0 +1,22 @@
+{
+  "slides": [
+    {
+      "position": 1,
+      "content": {
+        "title": "Everything"
+      }
+    },
+    {
+      "position": 2,
+      "content": {
+        "title": "Nothing"
+      }
+    },
+    {
+      "position": 3,
+      "content": {
+        "title": "Anything"
+      }
+    },
+  ]
+}
