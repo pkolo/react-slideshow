@@ -1,19 +1,19 @@
 {
   "slides": [
     {
-      "position": 1,
+      "id": 1,
       "content": {
         "title": "Everything"
       }
     },
     {
-      "position": 2,
+      "id": 2,
       "content": {
         "title": "Nothing"
       }
     },
     {
-      "position": 3,
+      "id": 3,
       "content": {
         "title": "Anything"
       }
