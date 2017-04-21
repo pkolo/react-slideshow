@@ -31,6 +31,10 @@ class App extends Component {
     return slideIDs
   }
 
+  changeActiveSlide(id) {
+    this.setState({activeSlide: id})
+  }
+
   render() {
     return (
       <div>
