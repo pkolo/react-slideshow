@@ -22,9 +22,9 @@
         "image": "img_002.jpg",
         "overlay": [
           {
-            "text": "Morbi venenatis at quam in aliquam. Morbi sit amet ligula id neque imperdiet scelerisque ut egestas quam.",
+            "text": "Vestibulum varius eget velit quis molestie. Duis condimentum mi eget placerat hendrerit. Cras vestibulum vitae ex ac auctor.",
             "style": {
-              "fontSize": "20px"
+              "fontSize": "16px"
             }
           }
         ]
@@ -37,9 +37,9 @@
         "image": "img_010.jpg",
         "overlay": [
           {
-            "text": "Morbi venenatis at quam in aliquam. Morbi sit amet ligula id neque imperdiet scelerisque ut egestas quam.",
+            "text": "Aliquam urna augue, luctus vel accumsan ac, lacinia in libero.",
             "style": {
-              "fontSize": "20px"
+              "fontSize": "24px"
             }
           }
         ]
