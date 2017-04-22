@@ -1,11 +1,12 @@
 .button {
   font-size: 3em;
-}
-
-.active {
   color: #fff;
 }
 
+.active {
+
+}
+
 .inactive {
-  background-color: #fff;
+  background-color: rgba(192,192,192,0.4);
 }
