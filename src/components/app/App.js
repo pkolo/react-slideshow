@@ -42,17 +42,27 @@ class App extends Component {
     return (id === this.state.activeSlideID)
   }
 
+  getActiveImage() {
+    let activeSlide = this.getActiveSlideContent()
+    let activeImageURL = `../../../${activeSlide.image}`
+    let divStyle = {
+      backgroundImage: `url(${activeImageURL})`
+    }
+    return divStyle
+  }
+
   render() {
     return (
-      <div className="App-wrapper">
+      <div>
         {this.state.slides.length > 0 &&
-          <div className="App-sidebar">
-            <Bar slides={this.getSlideIDs()} onSelect={this.changeActiveSlide} isActiveSlide={this.isActive}/>
-          </div>
-        }
-        {this.state.slides.length > 0 &&
-          <div className="App-slide">
-            <Slide slide={this.getActiveSlideContent()}/>
+          <div className="App-wrapper" style={this.getActiveImage()}>
+            <div className="App-sidebar">
+              <Bar slides={this.getSlideIDs()} onSelect={this.changeActiveSlide} isActiveSlide={this.isActive}/>
+            </div>
+
+            <div className="App-slide">
+              <Slide slide={this.getActiveSlideContent()}/>
+            </div>
           </div>
         }
       </div>
