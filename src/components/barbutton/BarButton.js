@@ -17,7 +17,7 @@ class BarButton extends Component {
   render(props) {
     return (
       <div>
-        <h1 className={this.props.style} onClick={this.handleClick}>{this.props.name}</h1>
+        <div className={this.props.style} onClick={this.handleClick}>{this.props.name}</div>
       </div>
     );
   }
