@@ -4,21 +4,45 @@
       "id": 1,
       "content": {
         "title": "Everything",
-        "image": "img_001.jpg"
+        "image": "img_001.jpg",
+        "overlay": [
+          {
+            "text": "Morbi venenatis at quam in aliquam. Morbi sit amet ligula id neque imperdiet scelerisque ut egestas quam.",
+            "style": {
+              "fontSize": "20px"
+            }
+          }
+        ]
       }
     },
     {
       "id": 2,
       "content": {
         "title": "Nothing",
-        "image": "img_002.jpg"
+        "image": "img_002.jpg",
+        "overlay": [
+          {
+            "text": "Morbi venenatis at quam in aliquam. Morbi sit amet ligula id neque imperdiet scelerisque ut egestas quam.",
+            "style": {
+              "fontSize": "20px"
+            }
+          }
+        ]
       }
     },
     {
       "id": 3,
       "content": {
         "title": "Anything",
-        "image": "img_010.jpg"
+        "image": "img_010.jpg",
+        "overlay": [
+          {
+            "text": "Morbi venenatis at quam in aliquam. Morbi sit amet ligula id neque imperdiet scelerisque ut egestas quam.",
+            "style": {
+              "fontSize": "20px"
+            }
+          }
+        ]
       }
     }
   ]
