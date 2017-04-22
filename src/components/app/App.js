@@ -60,7 +60,7 @@ class App extends Component {
               <div className="App-buttonbar">
                 <Bar slides={this.getSlideIDs()} onSelect={this.changeActiveSlide} isActiveSlide={this.isActive}/>
               </div>
-              <div className="App-fillerbar"></div>
+
             </div>
 
             <div className="App-slide">
