@@ -3,7 +3,7 @@
     {
       "id": 1,
       "content": {
-        "title": "Everything",
+        "title": "A nice place",
         "image": "img_001.jpg",
         "overlay": [
           {
@@ -18,7 +18,7 @@
     {
       "id": 2,
       "content": {
-        "title": "Nothing",
+        "title": "Night time something",
         "image": "img_002.jpg",
         "overlay": [
           {
@@ -33,7 +33,7 @@
     {
       "id": 3,
       "content": {
-        "title": "Anything",
+        "title": "By the beach",
         "image": "img_010.jpg",
         "overlay": [
           {
