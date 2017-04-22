@@ -1,15 +1,18 @@
 .App-wrapper {
   height: 100vh;
+  background-image: url('../../../public/img_001.jpg')
 }
 
 .App-sidebar {
   float: left;
   width: 50px;
+  min-height: 100%;
+  background-color: #fff;
+  text-align: center;
 }
 
 .App-slide {
   float: left;
   min-height: 100%;
   width: 900px;
-  background-color: #555;
 }
