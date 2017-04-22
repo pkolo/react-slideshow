@@ -5,10 +5,10 @@ class Bar extends Component {
 
   getButtonStyle(id) {
     if (this.props.isActiveSlide(id)) {
-      return "Button-active"
+      return "button active"
     }
     else {
-      return "Button-inactive"
+      return "button inactive"
     }
   }
 

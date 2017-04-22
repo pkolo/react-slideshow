@@ -1,4 +1,12 @@
-.Button-active {
-  background-color: #555;
+.button {
+  font-size: 3em;
   color: #fff;
+}
+
+.active {
+
+}
+
+.inactive {
+  background-color: rgba(192,192,192,0.4);
 }

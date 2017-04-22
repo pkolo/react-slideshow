@@ -3,19 +3,54 @@
     {
       "id": 1,
       "content": {
-        "title": "Everything"
+        "title": "A nice place",
+        "image": "img_001.jpg",
+        "overlay": [
+          {
+            "text": "Morbi venenatis at quam in aliquam. Morbi sit amet ligula id neque imperdiet scelerisque ut egestas quam.",
+            "style": {
+              "width": "600px",
+              "fontSize": "20px",
+              "color": "#fff",
+              "paddingTop" : "200px",
+              "paddingLeft": "100px"
+            }
+          }
+        ]
       }
     },
     {
       "id": 2,
       "content": {
-        "title": "Nothing"
+        "title": "Night time something",
+        "image": "img_002.jpg",
+        "overlay": [
+          {
+            "text": "Vestibulum varius eget velit quis molestie. Duis condimentum mi eget placerat hendrerit. Cras vestibulum vitae ex ac auctor.",
+            "style": {
+              "paddingTop": "600px",
+              "paddingLeft": "300px",
+              "width": "400px",
+              "fontSize": "16px",
+              "color": "#fff"
+            }
+          }
+        ]
       }
     },
     {
       "id": 3,
       "content": {
-        "title": "Anything"
+        "title": "By the beach",
+        "image": "img_010.jpg",
+        "overlay": [
+          {
+            "text": "Aliquam urna augue, luctus vel accumsan ac, lacinia in libero.",
+            "style": {
+              "fontSize": "24px"
+            }
+          }
+        ]
       }
     }
   ]
