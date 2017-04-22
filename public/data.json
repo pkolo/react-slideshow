@@ -9,7 +9,11 @@
           {
             "text": "Morbi venenatis at quam in aliquam. Morbi sit amet ligula id neque imperdiet scelerisque ut egestas quam.",
             "style": {
-              "fontSize": "20px"
+              "width": "600px",
+              "fontSize": "20px",
+              "color": "#fff",
+              "paddingTop" : "200px",
+              "paddingLeft": "100px"
             }
           }
         ]
@@ -24,7 +28,11 @@
           {
             "text": "Vestibulum varius eget velit quis molestie. Duis condimentum mi eget placerat hendrerit. Cras vestibulum vitae ex ac auctor.",
             "style": {
-              "fontSize": "16px"
+              "paddingTop": "600px",
+              "paddingLeft": "300px",
+              "width": "400px",
+              "fontSize": "16px",
+              "color": "#fff"
             }
           }
         ]

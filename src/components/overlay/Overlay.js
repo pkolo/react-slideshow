@@ -5,7 +5,7 @@ class Overlay extends Component {
 
   render() {
     return (
-      <h1 style={this.props.style}>{this.props.text}</h1>
+      <div style={this.props.style}>{this.props.text}</div>
     );
   }
 }
