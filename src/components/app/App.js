@@ -57,7 +57,10 @@ class App extends Component {
         {this.state.slides.length > 0 &&
           <div className="App-wrapper" style={this.getActiveImage()}>
             <div className="App-sidebar">
-              <Bar slides={this.getSlideIDs()} onSelect={this.changeActiveSlide} isActiveSlide={this.isActive}/>
+              <div className="App-buttonbar">
+                <Bar slides={this.getSlideIDs()} onSelect={this.changeActiveSlide} isActiveSlide={this.isActive}/>
+              </div>
+              <div className="App-fillerbar"></div>
             </div>
 
             <div className="App-slide">
